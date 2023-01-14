@@ -40,20 +40,20 @@
           </div>
         </div>
         <div class="main_left_bargraph">
-          <canvas id="myChart1" width="500px" height="400px"></canvas>
+          <canvas id="myChart1"></canvas>
         </div>
       </div>
       <div class="main_right">
         <div class="main_right_box">
           <div class="main_right_title">学習言語</div>
           <div class="main_right_graph1">
-            <canvas id="myChart2" width="240px" height="490px"></canvas>
+            <canvas id="myChart2"></canvas>
           </div>
         </div>
         <div class="main_right_box">
           <div class="main_right_title">学習コンテンツ</div>
           <div class="main_right_graph2">
-            <canvas id="myChart3" width="240px" height="490px"></canvas>
+            <canvas id="myChart3"></canvas>
           </div>
         </div>
       </div>
@@ -64,6 +64,9 @@
     <div class="footer_p2">2020年10月</div>
     <div class="footer_p3">＞</div>
   </footer>
+  <div class="header_right">
+    <div class="openbtn2" id="open2">記録・投稿</div>
+  </div>
 
   <div id="mask" class="hidden"></div>
   <section id="modal" class="hidden">
@@ -72,7 +75,7 @@
       <div class="modal_left">
         <div class="modal_date">
           <p>学習日</p>
-          <input type="text" name="">
+          <input type="date" name="">
         </div>
         <div class="modal_content">
           <p>学習コンテンツ</p>
@@ -99,12 +102,12 @@
         </div>
         <div class="modal_twitter">
           <p>Twitter用コメント</p>
-          <textarea id="twitterContent" name="" cols="50" rows="10"></textarea>
+          <textarea id="twitterContent" name="" cols="50" rows="10"></textarea><br>
           <input id="share" type="checkbox" name="Twitter" >Twitterにシェアする
         </div>
       </div>
     </div>
-    <div class="openbtn" id="record">記録・投稿</div>
+    <div class="openbtn3" id="record">記録・投稿</div>
   </section>
   <div id="modal2" class="loading hidden">
     <div id="close2">×</div>

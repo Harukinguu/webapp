@@ -41,21 +41,57 @@
   margin: 0 auto;
 }
 
+.openbtn2{
+  cursor: pointer;
+  width: 200px;
+  height: 45px;
+  /* margin-right: 30px; */
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 8px gray;
+  border-radius: 20px;
+  background: linear-gradient(90deg, #274a78, #00ffff);
+  color: white;
+  font-weight: 550;
+  /* text-align: center; */
+  margin: 0 auto;
+}
+
+.openbtn3{
+  cursor: pointer;
+  width: 200px;
+  height: 45px;
+  /* margin-right: 30px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 8px gray;
+  border-radius: 20px;
+  background: linear-gradient(90deg, #274a78, #00ffff);
+  color: white;
+  font-weight: 550;
+  /* text-align: center; */
+  margin: 0 auto;
+}
+
 main{
   background-color: azure;
 }
 
 .main{
   margin: 0 auto;
-  width: 1080px;
+  width: 85%;
   display: flex;
   /* background-color: gray; */
   gap: 20px;
   justify-content: center;
 }
 
+
 .main_left {
-  width: 520px;
+  width: calc((100%-20px)/2);
   height: 520px;
 }
 
@@ -104,18 +140,20 @@ main{
   background-color: white;
   box-shadow: 0 0 10px gray;
   border-radius: 10px;
+  width:100%
 }
 
 .main_right{
-  width: 500px;
+  width:calc((100%-20px)/2);
   height: 520px;
+  gap:20px;
   display: flex;
   justify-content: space-between;
   /* background-color: aqua; */
 }
 
 .main_right_box{
-  width: 240px;
+  width:calc((100%-20px)/2);
   height: 100%;
   background-color: white;
   box-shadow: 0 0 10px gray;
@@ -304,3 +342,32 @@ footer{
   margin-bottom: -15px;
   font-weight: 500;
 }
+
+
+  @media screen and (max-width:768px){
+    .main{
+      display: block;
+    }
+    .main_left{
+      width:100%;
+    }
+    .main_right{
+      width:100%;
+      margin-top: 15px;
+    }
+    .openbtn{
+      display: none;
+    }
+    /* .openbtn2{
+      display: block;
+    } */
+    #modal, #modal2, #modal3 {
+      width: 90%;
+    }
+    .modal_main{
+      flex-direction: column;
+    }
+    #close, #close2, #close3{
+      margin-left: 400px;
+    }
+  }

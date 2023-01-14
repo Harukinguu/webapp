@@ -3,6 +3,7 @@ Chart.register(ChartDataLabels);
 
 
 const open = document.getElementById('open');
+const open2 = document.getElementById('open2');
 const modal = document.getElementById('modal');
 const close = document.getElementById('close'); 
 const share = document.getElementById('share'); 
@@ -15,6 +16,11 @@ const close3 = document.getElementById('close3');
 const animation = document.querySelector('.circle');
 
 open.addEventListener('click',()=>{
+  modal.classList.remove('hidden');
+  mask.classList.remove('hidden');
+})
+
+open2.addEventListener('click',()=>{
   modal.classList.remove('hidden');
   mask.classList.remove('hidden');
 })
@@ -87,6 +93,8 @@ function createBarChart(jsonData){
       }],
     },
     options: {
+      responsive:true,
+      maintainAspectRatio:false,
       scales: {
         x: {
           grid: {
@@ -125,7 +133,7 @@ function createBarChart(jsonData){
           },
       }
       },
-      responsive: false
+      
     }
   })
 }
@@ -166,6 +174,8 @@ function createLangChart(jsonData){
       }]
     },
     options: {
+      responsive:true,
+      maintainAspectRatio:false,
       
       title: {
         display: true,
@@ -225,7 +235,8 @@ function createContentChart(jsonData){
       }]
     },
     options: {
-      
+      responsive:true,
+      maintainAspectRatio:false,
       title: {
         display: true,
         text: '割合'
